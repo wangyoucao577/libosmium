@@ -65,9 +65,9 @@ namespace osmium {
      */
     using changeset_comment_size_type = uint32_t;
 
-    /// Maximum of 2048 characters of max 4 bytes each (in UTF-8 encoding)
+    /// Maximum of 256 characters of max 256 bytes each (in UTF-8 encoding)
     enum {
-        max_osm_string_length = 2048 * 4
+        max_osm_string_length = 256 * 256
     };
 
 } // namespace osmium
